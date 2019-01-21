@@ -1,0 +1,1237 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}E:\My Files\Research\BI Working Paper\benar Procyclicality.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}25 Sep 2017, 18:00:11
+
+{com}. generate date = q (2002q1) + _n -1, before(cdr)
+{err}q not found
+{txt}{search r(111), local:r(111);}
+
+{com}. generate date = q(2002q1) + _n -1, before(cdr)
+
+. tsset date
+{res}{txt}{col 9}time variable:  {res}{col 25}date, 168 to 228
+{txt}{col 17}delta:  {res}1 unit
+
+{com}. list
+{txt}
+     {c TLC}{hline 6}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 7}{c -}{hline 8}{c -}{hline 7}{c TRC}
+     {c |} {res}date       cdr    pripro       gdp       gex      loan    irbi      cpi     irl {txt}{c |}
+     {c LT}{hline 6}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 7}{c -}{hline 8}{c -}{hline 7}{c RT}
+  1. {c |} {res} 168   2.23715    7.1037   5.64046   7.46176   6.33606   16.76    53.73   19.32 {txt}{c |}
+  2. {c |} {res} 169   2.28376   7.07068   5.65383   7.48321    6.7184   15.11    54.21   19.18 {txt}{c |}
+  3. {c |} {res} 170   2.27273    7.0664   5.67407    7.5321   6.52385   13.22    55.13   18.87 {txt}{c |}
+  4. {c |} {res} 171   2.27727   7.06889   5.66472   7.58871   6.67922   12.93    56.59   18.42 {txt}{c |}
+  5. {c |} {res} 172    2.2823   7.06447    5.6957   7.51858   6.72227    11.4    57.89    18.2 {txt}{c |}
+     {c LT}{hline 6}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 7}{c -}{hline 8}{c -}{hline 7}{c RT}
+  6. {c |} {res} 173   2.31315   7.04302   5.69725   7.57633    6.5404    9.53       58   17.68 {txt}{c |}
+  7. {c |} {res} 174   2.31221    7.0237   5.71274   7.63156    6.6848    8.66     58.5   16.44 {txt}{c |}
+  8. {c |} {res} 175     2.318     7.032   5.70183   7.70059   6.76344    8.31    59.73   15.43 {txt}{c |}
+  9. {c |} {res} 176   2.31358   7.04475   5.72965   7.63491   6.67648    7.42    60.71    14.8 {txt}{c |}
+ 10. {c |} {res} 177   2.29598   7.04528    5.7516   7.67774   6.39424    7.34    61.91   14.28 {txt}{c |}
+     {c LT}{hline 6}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 7}{c -}{hline 8}{c -}{hline 7}{c RT}
+ 11. {c |} {res} 178   2.31558    7.0495   5.77475   7.65988    6.4304    7.39    62.57   13.88 {txt}{c |}
+ 12. {c |} {res} 179   2.32306   7.04914   5.77777   7.73721   6.43497    7.43    63.54   13.54 {txt}{c |}
+ 13. {c |} {res} 180   2.32348   7.05949   5.80094   7.63035   6.52515    7.44    65.41   13.36 {txt}{c |}
+ 14. {c |} {res} 181   2.32257   7.07491   5.82638   7.66832   6.53847    8.25    66.64   13.29 {txt}{c |}
+ 15. {c |} {res} 182   2.31098   7.08584   5.85309   7.76355    6.5036      10    67.84   13.78 {txt}{c |}
+     {c LT}{hline 6}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 7}{c -}{hline 8}{c -}{hline 7}{c RT}
+ 16. {c |} {res} 183   2.33192   7.08553   5.87994    7.8903   6.52544   12.75    74.85   15.78 {txt}{c |}
+ 17. {c |} {res} 184   2.36146   7.09283   5.89362   7.74166   6.49146   12.75    76.47   16.34 {txt}{c |}
+ 18. {c |} {res} 185   2.36062   7.11094   5.90995   7.84849   6.67697    12.5    76.98   16.23 {txt}{c |}
+ 19. {c |} {res} 186   2.36813    7.1019   5.93968   7.86008   6.73362   11.25    77.92      16 {txt}{c |}
+ 20. {c |} {res} 187   2.38812    7.1202   5.94121   7.95381   6.54332    9.75    79.38   15.35 {txt}{c |}
+     {c LT}{hline 6}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 7}{c -}{hline 8}{c -}{hline 7}{c RT}
+ 21. {c |} {res} 188   2.38806    7.1257   5.96388   7.82333     6.458       9    81.51    14.7 {txt}{c |}
+ 22. {c |} {res} 189   2.39724   7.12052   5.98401   7.91765   6.43644     8.5    81.82   14.08 {txt}{c |}
+ 23. {c |} {res} 190   2.40878   7.12052   6.01343   7.90623   6.53954    8.25    82.94   13.56 {txt}{c |}
+ 24. {c |} {res} 191   2.42273   7.13743   6.01512   7.99946    6.6083       8     84.4   13.11 {txt}{c |}
+ 25. {c |} {res} 192   2.44944   7.15822   6.04534   7.88493   6.51631       8    86.82   12.94 {txt}{c |}
+     {c LT}{hline 6}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 7}{c -}{hline 8}{c -}{hline 7}{c RT}
+ 26. {c |} {res} 193   2.47667   7.17222   6.08658   8.02117   6.57205     8.5     89.2   12.95 {txt}{c |}
+ 27. {c |} {res} 194   2.49228   7.18256   6.12304   8.02546   6.46764    9.25    92.86    13.5 {txt}{c |}
+ 28. {c |} {res} 195   2.44793   7.20154   6.11077   8.11096   6.41996    9.25    94.11   15.01 {txt}{c |}
+ 29. {c |} {res} 196   2.41713   7.22983   6.11902   7.99844   6.40559    7.75    94.26    15.1 {txt}{c |}
+ 30. {c |} {res} 197   2.47457   7.19738   6.14032   8.13095   6.79193       7    94.24   14.67 {txt}{c |}
+     {c LT}{hline 6}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 7}{c -}{hline 8}{c -}{hline 7}{c RT}
+ 31. {c |} {res} 198    2.5021   7.17816   6.16382   8.11085   6.95045     6.5    95.43   14.31 {txt}{c |}
+ 32. {c |} {res} 199   2.52113   7.17783   6.16176   8.23974   6.84165     6.5    96.54   13.91 {txt}{c |}
+ 33. {c |} {res} 200   2.53156   7.18437   6.20514   7.99878    7.1875     6.5     97.7   13.66 {txt}{c |}
+ 34. {c |} {res} 201   2.55587   7.17598    6.2316   8.13049   6.91789     6.5    98.35   13.28 {txt}{c |}
+ 35. {c |} {res} 202   2.57646   7.17908   6.25193   8.19379   7.16492     6.5    101.3   13.13 {txt}{c |}
+     {c LT}{hline 6}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 7}{c -}{hline 8}{c -}{hline 7}{c RT}
+ 36. {c |} {res} 203   2.59465   7.18246   6.24789   8.35635   7.06285     6.5   102.64   12.93 {txt}{c |}
+ 37. {c |} {res} 204   2.61351   7.17905   6.26348    8.0469   6.98093    6.75   104.38    12.6 {txt}{c |}
+ 38. {c |} {res} 205   2.64039   7.19921   6.28516   8.18108   7.09049    6.75   104.15   12.26 {txt}{c |}
+ 39. {c |} {res} 206   2.64579   7.21573   6.31255     8.279   7.05903    6.75   106.03   12.48 {txt}{c |}
+ 40. {c |} {res} 207   2.66272   7.22662   6.30436   8.40859   6.89314       6   106.87   12.28 {txt}{c |}
+     {c LT}{hline 6}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 7}{c -}{hline 8}{c -}{hline 7}{c RT}
+ 41. {c |} {res} 208   2.67673   7.31568   6.31415   8.12057   6.98752    5.75   108.52   12.04 {txt}{c |}
+ 42. {c |} {res} 209   2.69065   7.35804   6.33486   8.32234   7.12829    5.75   109.01   11.81 {txt}{c |}
+ 43. {c |} {res} 210   2.69835   7.38153   6.34706   8.27367   7.09586    5.75   110.63   11.74 {txt}{c |}
+ 44. {c |} {res} 211   2.71092   7.40988    6.3362   8.42651   7.18464    5.75    111.3   11.59 {txt}{c |}
+ 45. {c |} {res} 212   2.71313   7.43548   6.34933   8.15612   7.00766    5.75   113.38   11.46 {txt}{c |}
+     {c LT}{hline 6}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 7}{c -}{hline 8}{c -}{hline 7}{c RT}
+ 46. {c |} {res} 213   2.72577   7.45482    6.3697   8.32927   6.78928       6   114.52   11.44 {txt}{c |}
+ 47. {c |} {res} 214   2.70075   7.48292    6.3964    8.3672   6.83707    7.25    119.5    11.7 {txt}{c |}
+ 48. {c |} {res} 215   2.69833   7.51233   6.39394   8.50374   6.86583     7.5   120.23   12.04 {txt}{c |}
+ 49. {c |} {res} 216   2.73008   7.51323   6.39903   8.21951   6.87728     7.5   122.18   12.31 {txt}{c |}
+ 50. {c |} {res} 217   2.73009   7.52129   6.41813   8.35864   6.89733     7.5   122.64   12.55 {txt}{c |}
+     {c LT}{hline 6}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 7}{c -}{hline 8}{c -}{hline 7}{c RT}
+ 51. {c |} {res} 218   2.73535   7.52684   6.43882   8.41167   6.90977     7.5    124.7   12.75 {txt}{c |}
+ 52. {c |} {res} 219    2.7377   7.53267   6.43099   8.53659   7.00253    7.75   128.01   12.82 {txt}{c |}
+ 53. {c |} {res} 220   2.73004   7.55274   6.43589   8.25612   6.90875     7.5   130.18   12.77 {txt}{c |}
+ 54. {c |} {res} 221   2.73656   7.58619    6.4577   8.40467   6.99288     7.5   131.31   12.72 {txt}{c |}
+ 55. {c |} {res} 222    2.7184   7.58766   6.47606   8.46669   6.96928     7.5   133.54   12.62 {txt}{c |}
+     {c LT}{hline 6}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 7}{c -}{hline 8}{c -}{hline 7}{c RT}
+ 56. {c |} {res} 223   2.75472   7.58787   6.46864   8.59953   6.99261     7.5   134.17   12.53 {txt}{c |}
+ 57. {c |} {res} 224   2.77578   7.58787   6.46708   8.30351   7.03226    6.75   135.82   12.38 {txt}{c |}
+ 58. {c |} {res} 225   2.79127   7.59307   6.48786   8.46352   6.84878     6.5   135.85   11.98 {txt}{c |}
+ 59. {c |} {res} 226   2.80291   7.59305   6.50589   8.46223   6.83383       5   137.58   11.71 {txt}{c |}
+ 60. {c |} {res} 227   2.79927   7.59297   6.50444   8.59177   6.86246    4.75   138.61   11.49 {txt}{c |}
+     {c LT}{hline 6}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 7}{c -}{hline 8}{c -}{hline 7}{c RT}
+ 61. {c |} {res} 228   2.81142   7.59463   6.50883   8.32718   6.92727    4.75   140.77   11.26 {txt}{c |}
+     {c BLC}{hline 6}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 9}{c -}{hline 7}{c -}{hline 8}{c -}{hline 7}{c BRC}
+
+{com}. summarize
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         61         198    17.75293        168        228
+{txt}{space 9}cdr {c |}{res}         61    2.524578     .183672   2.237149   2.811424
+{txt}{space 6}pripro {c |}{res}         61    7.256694    .1984713   7.023697   7.594627
+{txt}{space 9}gdp {c |}{res}         61    6.121138    .2823089   5.640457   6.508825
+{txt}{space 9}gex {c |}{res}         61    8.052858    .3213507   7.461758   8.599529
+{txt}{hline 13}{c +}{hline 57}
+{space 8}loan {c |}{res}         61     6.76653    .2393913   6.336057   7.187495
+{txt}{space 8}irbi {c |}{res}         61    8.138361    2.485845       4.75      16.76
+{txt}{space 9}cpi {c |}{res}         61    95.18033    26.58492      53.73     140.77
+{txt}{space 9}irl {c |}{res}         61    13.84164    2.079646      11.26      19.32
+
+{com}. summarize, detail
+
+                            {txt}date
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}      168            168
+{txt} 5%    {res}      171            169
+{txt}10%    {res}      174            170       {txt}Obs         {res}         61
+{txt}25%    {res}      183            171       {txt}Sum of Wgt. {res}         61
+
+{txt}50%    {res}      198                      {txt}Mean          {res}      198
+                        {txt}Largest       Std. Dev.     {res} 17.75293
+{txt}75%    {res}      213            225
+{txt}90%    {res}      222            226       {txt}Variance      {res} 315.1667
+{txt}95%    {res}      225            227       {txt}Skewness      {res}        0
+{txt}99%    {res}      228            228       {txt}Kurtosis      {res} 1.799355
+
+                           {txt}Credits
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res} 2.237149       2.237149
+{txt} 5%    {res} 2.282298        2.27273
+{txt}10%    {res} 2.310984       2.277268       {txt}Obs         {res}         61
+{txt}25%    {res} 2.331919       2.282298       {txt}Sum of Wgt. {res}         61
+
+{txt}50%    {res} 2.502099                      {txt}Mean          {res} 2.524578
+                        {txt}Largest       Std. Dev.     {res}  .183672
+{txt}75%    {res} 2.710917       2.791269
+{txt}90%    {res}   2.7377       2.799271       {txt}Variance      {res} .0337354
+{txt}95%    {res} 2.791269       2.802912       {txt}Skewness      {res} .0537449
+{txt}99%    {res} 2.811424       2.811424       {txt}Kurtosis      {res} 1.458204
+
+                    {txt}Prices of Properties
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res} 7.023697       7.023697
+{txt} 5%    {res} 7.044751       7.031997
+{txt}10%    {res} 7.049498        7.04302       {txt}Obs         {res}         61
+{txt}25%    {res} 7.092833       7.044751       {txt}Sum of Wgt. {res}         61
+
+{txt}50%    {res}  7.17908                      {txt}Mean          {res} 7.256694
+                        {txt}Largest       Std. Dev.     {res} .1984713
+{txt}75%    {res} 7.454818       7.592973
+{txt}90%    {res} 7.587656        7.59305       {txt}Variance      {res} .0393909
+{txt}95%    {res} 7.592973       7.593066       {txt}Skewness      {res} .6331944
+{txt}99%    {res} 7.594627       7.594627       {txt}Kurtosis      {res} 1.820363
+
+                            {txt}GDP 
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res} 5.640457       5.640457
+{txt} 5%    {res} 5.674067        5.65383
+{txt}10%    {res} 5.701826       5.664719       {txt}Obs         {res}         61
+{txt}25%    {res} 5.879941       5.674067       {txt}Sum of Wgt. {res}         61
+
+{txt}50%    {res} 6.161762                      {txt}Mean          {res} 6.121138
+                        {txt}Largest       Std. Dev.     {res} .2823089
+{txt}75%    {res} 6.369696       6.487864
+{txt}90%    {res} 6.467082        6.50444       {txt}Variance      {res} .0796983
+{txt}95%    {res} 6.487864       6.505889       {txt}Skewness      {res} -.267246
+{txt}99%    {res} 6.508825       6.508825       {txt}Kurtosis      {res} 1.676423
+
+                          {txt}GEX (RP)
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res} 7.461758       7.461758
+{txt} 5%    {res} 7.532101       7.483213
+{txt}10%    {res}  7.63035       7.518576       {txt}Obs         {res}         61
+{txt}25%    {res} 7.763554       7.532101       {txt}Sum of Wgt. {res}         61
+
+{txt}50%    {res} 8.110854                      {txt}Mean          {res} 8.052858
+                        {txt}Largest       Std. Dev.     {res} .3213507
+{txt}75%    {res} 8.327175       8.503741
+{txt}90%    {res} 8.462231       8.536593       {txt}Variance      {res} .1032663
+{txt}95%    {res} 8.503741       8.591771       {txt}Skewness      {res}-.1649334
+{txt}99%    {res} 8.599529       8.599529       {txt}Kurtosis      {res}  1.85924
+
+                         {txt}Loans (RP)
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res} 6.336057       6.336057
+{txt} 5%    {res} 6.419958       6.394242
+{txt}10%    {res} 6.436443       6.405593       {txt}Obs         {res}         61
+{txt}25%    {res} 6.538466       6.419958       {txt}Sum of Wgt. {res}         61
+
+{txt}50%    {res} 6.791934                      {txt}Mean          {res}  6.76653
+                        {txt}Largest       Std. Dev.     {res} .2393913
+{txt}75%    {res}  6.96928       7.128293
+{txt}90%    {res} 7.062847       7.164918       {txt}Variance      {res} .0573082
+{txt}95%    {res} 7.128293       7.184643       {txt}Skewness      {res}-.0466195
+{txt}99%    {res} 7.187495       7.187495       {txt}Kurtosis      {res} 1.781474
+
+                           {txt}BI Rate
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}     4.75           4.75
+{txt} 5%    {res}     5.75           4.75
+{txt}10%    {res}     5.75              5       {txt}Obs         {res}         61
+{txt}25%    {res}      6.5           5.75       {txt}Sum of Wgt. {res}         61
+
+{txt}50%    {res}      7.5                      {txt}Mean          {res} 8.138361
+                        {txt}Largest       Std. Dev.     {res} 2.485845
+{txt}75%    {res}     8.66          12.93
+{txt}90%    {res}     12.5          13.22       {txt}Variance      {res} 6.179424
+{txt}95%    {res}    12.93          15.11       {txt}Skewness      {res} 1.463356
+{txt}99%    {res}    16.76          16.76       {txt}Kurtosis      {res} 4.977414
+
+                    {txt}Consumer Price Index
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}    53.73          53.73
+{txt} 5%    {res}    56.59          54.21
+{txt}10%    {res}     58.5          55.13       {txt}Obs         {res}         61
+{txt}25%    {res}    74.85          56.59       {txt}Sum of Wgt. {res}         61
+
+{txt}50%    {res}    95.43                      {txt}Mean          {res} 95.18033
+                        {txt}Largest       Std. Dev.     {res} 26.58492
+{txt}75%    {res}   114.52         135.85
+{txt}90%    {res}   133.54         137.58       {txt}Variance      {res} 706.7579
+{txt}95%    {res}   135.85         138.61       {txt}Skewness      {res} .0392508
+{txt}99%    {res}   140.77         140.77       {txt}Kurtosis      {res} 1.823211
+
+                     {txt}Real Interest Rates
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}    11.26          11.26
+{txt} 5%    {res}    11.49          11.44
+{txt}10%    {res}    11.71          11.46       {txt}Obs         {res}         61
+{txt}25%    {res}    12.38          11.49       {txt}Sum of Wgt. {res}         61
+
+{txt}50%    {res}    13.28                      {txt}Mean          {res} 13.84164
+                        {txt}Largest       Std. Dev.     {res} 2.079646
+{txt}75%    {res}     14.8          18.42
+{txt}90%    {res}    16.44          18.87       {txt}Variance      {res} 4.324928
+{txt}95%    {res}    18.42          19.18       {txt}Skewness      {res} 1.118098
+{txt}99%    {res}    19.32          19.32       {txt}Kurtosis      {res} 3.498448
+
+{com}. 
+. dfuller cdr
+
+{txt}Dickey-Fuller test for unit root                   Number of obs   = {res}       60
+
+{txt}{col 32}{hline 10} Interpolated Dickey-Fuller {hline 9}
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+{hline 78}
+ Z(t)         {res}    -0.374            -3.566            -2.922            -2.596
+{txt}{hline 78}
+MacKinnon approximate p-value for Z(t) = {res}0.9144
+
+{com}. dfuller pripro
+
+{txt}Dickey-Fuller test for unit root                   Number of obs   = {res}       60
+
+{txt}{col 32}{hline 10} Interpolated Dickey-Fuller {hline 9}
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+{hline 78}
+ Z(t)         {res}     1.344            -3.566            -2.922            -2.596
+{txt}{hline 78}
+MacKinnon approximate p-value for Z(t) = {res}0.9968
+
+{com}. dfuller gdp
+
+{txt}Dickey-Fuller test for unit root                   Number of obs   = {res}       60
+
+{txt}{col 32}{hline 10} Interpolated Dickey-Fuller {hline 9}
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+{hline 78}
+ Z(t)         {res}    -1.586            -3.566            -2.922            -2.596
+{txt}{hline 78}
+MacKinnon approximate p-value for Z(t) = {res}0.4905
+
+{com}. difuller gex
+{err}command {bf}difuller{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. dfuller gex
+
+{txt}Dickey-Fuller test for unit root                   Number of obs   = {res}       60
+
+{txt}{col 32}{hline 10} Interpolated Dickey-Fuller {hline 9}
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+{hline 78}
+ Z(t)         {res}    -2.149            -3.566            -2.922            -2.596
+{txt}{hline 78}
+MacKinnon approximate p-value for Z(t) = {res}0.2251
+
+{com}. dfuller loan
+
+{txt}Dickey-Fuller test for unit root                   Number of obs   = {res}       60
+
+{txt}{col 32}{hline 10} Interpolated Dickey-Fuller {hline 9}
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+{hline 78}
+ Z(t)         {res}    -2.692            -3.566            -2.922            -2.596
+{txt}{hline 78}
+MacKinnon approximate p-value for Z(t) = {res}0.0754
+
+{com}. dfuller cpi
+
+{txt}Dickey-Fuller test for unit root                   Number of obs   = {res}       60
+
+{txt}{col 32}{hline 10} Interpolated Dickey-Fuller {hline 9}
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+{hline 78}
+ Z(t)         {res}     0.601            -3.566            -2.922            -2.596
+{txt}{hline 78}
+MacKinnon approximate p-value for Z(t) = {res}0.9876
+
+{com}. dfuller irl
+
+{txt}Dickey-Fuller test for unit root                   Number of obs   = {res}       60
+
+{txt}{col 32}{hline 10} Interpolated Dickey-Fuller {hline 9}
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+{hline 78}
+ Z(t)         {res}    -2.548            -3.566            -2.922            -2.596
+{txt}{hline 78}
+MacKinnon approximate p-value for Z(t) = {res}0.1043
+
+{com}. vecrank cdr pripro gdp gex loan irbi cpi irl
+{res}
+{txt}{center 79:Johansen tests for cointegration}
+Trend: constant{col 57}Number of obs = {res}{col 6}     59
+{txt}Sample:  {res}170 - 228{txt}{col 66}Lags = {res}      2
+{txt}{hline 79}
+{col 58}5%
+maximum{col 46}trace{col 55}critical
+  rank{col 11}parms{col 23}LL{col 32}eigenvalue{col 44}statistic{col 57}value
+{col 3}{res}  0{col 12}72  {col 19} 511.11332{col 33}       .{col 44} 218.2993{col 55} 156.00
+{col 3}  1{col 12}87  {col 19} 548.91513{col 33} 0.72236{col 44} 142.6956{col 55} 124.24
+{col 3}  2{col 12}100 {col 19} 572.31285{col 33} 0.54758{col 44}  95.9002{col 55}  94.15
+{col 3}  3{col 12}111 {col 19} 588.69347{col 33} 0.42609{col 44}  63.1390{help vecrankstar##|_new:*}{col 55}  68.52
+{col 3}  4{col 12}120 {col 19} 598.34465{col 33} 0.27903{col 44}  43.8366{col 55}  47.21
+{col 3}  5{col 12}127 {col 19} 606.60878{col 33} 0.24432{col 44}  27.3083{col 55}  29.68
+{col 3}  6{col 12}132 {col 19} 613.91951{col 33} 0.21950{col 44}  12.6869{col 55}  15.41
+{col 3}  7{col 12}135 {col 19} 620.04016{col 33} 0.18737{col 44}   0.4456{col 55}   3.76
+{col 3}  8{col 12}136 {col 19} 620.26295{col 33} 0.00752
+{txt}{hline 79}
+
+{com}. varsoc cdr pripro gex loan irbi cpi irl irl, level(90)
+
+{txt}{col 4}Selection-order criteria
+{col 4}Sample:  {res}172 - 228 {txt}{col 49}Number of obs {col 68}= {res}       57
+{col 3}{text}{c TLC}{hline 4}{c TT}{hline 9}{hline 8}{hline 1}{hline 5}{hline 7}{hline 8}{hline 1}{hline 9}{hline 1}{hline 9}{hline 1}{hline 9}{hline 1}{hline 1}{c TRC}
+{col 3}{text}{c |}lag{col 8}{c |}    LL  {col 18}   LR  {col 27}  df{col 32}   p  {col 39}   FPE {col 48}    AIC {col 58}   HQIC {col 68}   SBIC {col 79}{c |}
+{col 3}{text}{c LT}{hline 4}{c +}{hline 9}{hline 8}{hline 1}{hline 5}{hline 7}{hline 8}{hline 1}{hline 9}{hline 1}{hline 9}{hline 1}{hline 9}{hline 1}{hline 1}{c RT}
+{col 3}{text}{c |}  0{col 8}{c |}{result}{space 1}-142.945{col 18}{col 27}{col 32}{col 39} 4.5e-07{col 48}{space 1} 5.26123{col 58}{space 1} 5.35874{col 68}{space 1} 5.51213{col 79}{text}{c |}
+{col 3}{text}{c |}  1{col 8}{c |}{result}{space 1} 326.436{col 18}{space 1} 938.76{col 27}  49{col 32} 0.000{col 39} 1.8e-13{col 48}{space 1}-9.48899{col 58}{space 1}-8.70892{col 68}{space 1}-7.48178{col 77}*{col 79}{text}{c |}
+{col 3}{text}{c |}  2{col 8}{c |}{result}{space 1} 383.427{col 18}{space 1} 113.98{col 27}  49{col 32} 0.000{col 39} 1.5e-13{col 48}{space 1}-9.76938{col 58}{space 1}-8.30675{col 68}{space 1}-6.00587{col 79}{text}{c |}
+{col 3}{text}{c |}  3{col 8}{c |}{result}{space 1}  433.31{col 18}{space 1} 99.766{col 27}  49{col 32} 0.000{col 39} 1.8e-13{col 48}{space 1}-9.80036{col 58}{space 1}-7.65517{col 68}{space 1}-4.28054{col 79}{text}{c |}
+{col 3}{text}{c |}  4{col 8}{c |}{result}{space 1}  546.91{col 18}{space 1}  227.2{col 26}*{col 27}  49{col 32} 0.000{col 39} 2.8e-14{col 47}*{col 48}{space 1} -12.067{col 57}*{col 58}{space 1}-9.23928{col 67}*{col 68}{space 1} -4.7909{col 79}{text}{c |}
+{col 3}{text}{c BLC}{hline 4}{c BT}{hline 9}{hline 8}{hline 1}{hline 5}{hline 7}{hline 8}{hline 1}{hline 9}{hline 1}{hline 9}{hline 1}{hline 9}{hline 1}{hline 1}{c BRC}
+{space 3}Endogenous:  cdr pripro gex loan irbi cpi irl irl
+{space 3} Exogenous:  _cons
+
+{com}. vecrank cdr  pripro  gdp gex loan irbi cpi irl, trend(constant) levela
+{res}
+{txt}{center 79:Johansen tests for cointegration}
+Trend: constant{col 57}Number of obs = {res}{col 6}     59
+{txt}Sample:  {res}170 - 228{txt}{col 66}Lags = {res}      2
+{txt}{hline 79}
+maximum{col 46}trace{col 56}5% critical{col 69}1% critical
+  rank{col 11}parms{col 23}LL{col 32}eigenvalue{col 44}statistic{col 59}value{col 72}value
+{col 3}{res}  0{col 12}72  {col 19} 511.11332{col 44} 218.2993{col 57} 156.00{col 70} 168.36
+{col 3}  1{col 12}87  {col 19} 548.91513{col 33} 0.72236{col 44} 142.6956{col 57} 124.24{col 70} 133.57
+{col 3}  2{col 12}100 {col 19} 572.31285{col 33} 0.54758{col 44}  95.9002{help vecrankstar##|_new:*1}{col 57}  94.15{col 70} 103.18
+{col 3}  3{col 12}111 {col 19} 588.69347{col 33} 0.42609{col 44}  63.1390{help vecrankstar##|_new:*5}{col 57}  68.52{col 70}  76.07
+{col 3}  4{col 12}120 {col 19} 598.34465{col 33} 0.27903{col 44}  43.8366{col 57}  47.21{col 70}  54.46
+{col 3}  5{col 12}127 {col 19} 606.60878{col 33} 0.24432{col 44}  27.3083{col 57}  29.68{col 70}  35.65
+{col 3}  6{col 12}132 {col 19} 613.91951{col 33} 0.21950{col 44}  12.6869{col 57}  15.41{col 70}  20.04
+{col 3}  7{col 12}135 {col 19} 620.04016{col 33} 0.18737{col 44}   0.4456{col 57}   3.76{col 70}   6.65
+{col 3}  8{col 12}136 {col 19} 620.26295{col 33} 0.00752
+{txt}{hline 79}
+
+{com}. vec cdr gdp gdp gex loan cpi cpi irl, trend(constant) rank(3)
+{err}the endogenous variables are perfectly collinear
+{p 4 4 2}a list of noncollinear variables is{p_end}
+{p 8 8 2}cdr gdp gex loan cpi irl{p_end}
+last estimates not found
+{txt}{search r(301), local:r(301);}
+
+{com}. vec cdr  pripro gdp gex loan  irbi cpi cpi irl, trend(constant) rank(3)
+{err}the endogenous variables are perfectly collinear
+{p 4 4 2}a list of noncollinear variables is{p_end}
+{p 8 8 2}cdr pripro gdp gex loan irbi cpi irl{p_end}
+last estimates not found
+{txt}{search r(301), local:r(301);}
+
+{com}. vec cdr pripro gdp gex loan irbi cpi cpi irl, trend(constant) rank(3)
+{err}the endogenous variables are perfectly collinear
+{p 4 4 2}a list of noncollinear variables is{p_end}
+{p 8 8 2}cdr pripro gdp gex loan irbi cpi irl{p_end}
+last estimates not found
+{txt}{search r(301), local:r(301);}
+
+{com}. vec cdr pripro gdp gex loan irbi cpi irl, trend(constant) rank(3)
+
+{res}{txt}Vector error-correction model
+
+{col 1}Sample:  {res}170 - 228 {txt}{col 49}Number of obs{col 67}= {res}        59
+{txt}{col 49}AIC{col 67}=  {res}  -16.193
+{txt}Log likelihood = {res} 588.6935{txt}{col 49}HQIC{col 67}=  {res}-14.66724
+{txt}Det(Sigma_ml){col 16}= {res} 2.98e-19{txt}{col 49}SBIC{col 67}=  {res}-12.28441
+
+{col 1}{text}Equation        {col 18}  Parms{col 26}     RMSE {col 37}   R-sq  {col 47}   chi2   {col 58} P>chi2
+{col 1}{text}{hline 17}{hline 8}{hline 11}{hline 10}{hline 11}{hline 7}
+{col 1}{text}D_cdr           {col 18}{result}    12{col 26}{space 2} .016995{col 37}{space 1} 0.3625{col 47} 26.15715{col 58} 0.0102
+{col 1}{text}D_pripro        {col 18}{result}    12{col 26}{space 2} .012524{col 37}{space 1} 0.6715{col 47} 94.03407{col 58} 0.0000
+{col 1}{text}D_gdp           {col 18}{result}    12{col 26}{space 2} .012459{col 37}{space 1} 0.6925{col 47} 103.6175{col 58} 0.0000
+{col 1}{text}D_gex           {col 18}{result}    12{col 26}{space 2} .068278{col 37}{space 1} 0.8166{col 47} 204.8583{col 58} 0.0000
+{col 1}{text}D_loan          {col 18}{result}    12{col 26}{space 2} .106331{col 37}{space 1} 0.4837{col 47} 43.09793{col 58} 0.0000
+{col 1}{text}D_irbi          {col 18}{result}    12{col 26}{space 2} .573329{col 37}{space 1} 0.5777{col 47} 62.92352{col 58} 0.0000
+{col 1}{text}D_cpi           {col 18}{result}    12{col 26}{space 2} .990022{col 37}{space 1} 0.7780{col 47} 161.1721{col 58} 0.0000
+{col 1}{text}D_irl           {col 18}{result}    12{col 26}{space 2} .319929{col 37}{space 1} 0.6803{col 47}  97.8754{col 58} 0.0000
+{col 1}{text}{hline 17}{hline 8}{hline 11}{hline 10}{hline 11}{hline 7}
+
+{res}{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      z{col 46}   P>|z|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}D_cdr        {txt}{c |}
+{space 8}_ce1 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2}-.1557756{col 26}{space 2} .1076773{col 37}{space 1}   -1.45{col 46}{space 3}0.148{col 54}{space 4}-.3668193{col 67}{space 3} .0552681
+{txt}{space 12} {c |}
+{space 8}_ce2 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2} .0623142{col 26}{space 2} .0338385{col 37}{space 1}    1.84{col 46}{space 3}0.066{col 54}{space 4}-.0040081{col 67}{space 3} .1286364
+{txt}{space 12} {c |}
+{space 8}_ce3 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2}-.1187208{col 26}{space 2} .0811593{col 37}{space 1}   -1.46{col 46}{space 3}0.144{col 54}{space 4}  -.27779{col 67}{space 3} .0403485
+{txt}{space 12} {c |}
+{space 9}cdr {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .1534458{col 26}{space 2}  .169115{col 37}{space 1}    0.91{col 46}{space 3}0.364{col 54}{space 4}-.1780136{col 67}{space 3} .4849051
+{txt}{space 12} {c |}
+{space 6}pripro {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .0788822{col 26}{space 2} .1658265{col 37}{space 1}    0.48{col 46}{space 3}0.634{col 54}{space 4}-.2461317{col 67}{space 3} .4038961
+{txt}{space 12} {c |}
+{space 9}gdp {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .4006426{col 26}{space 2} .2748013{col 37}{space 1}    1.46{col 46}{space 3}0.145{col 54}{space 4}-.1379581{col 67}{space 3} .9392432
+{txt}{space 12} {c |}
+{space 9}gex {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0720327{col 26}{space 2} .0405702{col 37}{space 1}   -1.78{col 46}{space 3}0.076{col 54}{space 4}-.1515488{col 67}{space 3} .0074834
+{txt}{space 12} {c |}
+{space 8}loan {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0089524{col 26}{space 2} .0189753{col 37}{space 1}   -0.47{col 46}{space 3}0.637{col 54}{space 4}-.0461433{col 67}{space 3} .0282384
+{txt}{space 12} {c |}
+{space 8}irbi {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .0035189{col 26}{space 2} .0059262{col 37}{space 1}    0.59{col 46}{space 3}0.553{col 54}{space 4}-.0080963{col 67}{space 3} .0151341
+{txt}{space 12} {c |}
+{space 9}cpi {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0034866{col 26}{space 2}  .003053{col 37}{space 1}   -1.14{col 46}{space 3}0.253{col 54}{space 4}-.0094703{col 67}{space 3} .0024972
+{txt}{space 12} {c |}
+{space 9}irl {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .0011611{col 26}{space 2} .0078737{col 37}{space 1}    0.15{col 46}{space 3}0.883{col 54}{space 4}-.0142709{col 67}{space 3} .0165932
+{txt}{space 12} {c |}
+{space 7}_cons {c |}{col 14}{res}{space 2}  .058887{col 26}{space 2} .0203921{col 37}{space 1}    2.89{col 46}{space 3}0.004{col 54}{space 4} .0189192{col 67}{space 3} .0988549
+{txt}{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}D_pripro     {txt}{c |}
+{space 8}_ce1 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2} .3373366{col 26}{space 2} .0793511{col 37}{space 1}    4.25{col 46}{space 3}0.000{col 54}{space 4} .1818113{col 67}{space 3} .4928618
+{txt}{space 12} {c |}
+{space 8}_ce2 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2}-.1147785{col 26}{space 2} .0249367{col 37}{space 1}   -4.60{col 46}{space 3}0.000{col 54}{space 4}-.1636535{col 67}{space 3}-.0659034
+{txt}{space 12} {c |}
+{space 8}_ce3 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2}-.1014608{col 26}{space 2}  .059809{col 37}{space 1}   -1.70{col 46}{space 3}0.090{col 54}{space 4}-.2186843{col 67}{space 3} .0157627
+{txt}{space 12} {c |}
+{space 9}cdr {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.2134697{col 26}{space 2} .1246266{col 37}{space 1}   -1.71{col 46}{space 3}0.087{col 54}{space 4}-.4577333{col 67}{space 3} .0307939
+{txt}{space 12} {c |}
+{space 6}pripro {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .0482633{col 26}{space 2} .1222031{col 37}{space 1}    0.39{col 46}{space 3}0.693{col 54}{space 4}-.1912504{col 67}{space 3}  .287777
+{txt}{space 12} {c |}
+{space 9}gdp {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.1552063{col 26}{space 2} .2025104{col 37}{space 1}   -0.77{col 46}{space 3}0.443{col 54}{space 4}-.5521194{col 67}{space 3} .2417067
+{txt}{space 12} {c |}
+{space 9}gex {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0288875{col 26}{space 2} .0298975{col 37}{space 1}   -0.97{col 46}{space 3}0.334{col 54}{space 4}-.0874856{col 67}{space 3} .0297106
+{txt}{space 12} {c |}
+{space 8}loan {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .0032715{col 26}{space 2} .0139835{col 37}{space 1}    0.23{col 46}{space 3}0.815{col 54}{space 4}-.0241357{col 67}{space 3} .0306787
+{txt}{space 12} {c |}
+{space 8}irbi {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0023391{col 26}{space 2} .0043672{col 37}{space 1}   -0.54{col 46}{space 3}0.592{col 54}{space 4}-.0108987{col 67}{space 3} .0062205
+{txt}{space 12} {c |}
+{space 9}cpi {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .0017158{col 26}{space 2} .0022498{col 37}{space 1}    0.76{col 46}{space 3}0.446{col 54}{space 4}-.0026938{col 67}{space 3} .0061254
+{txt}{space 12} {c |}
+{space 9}irl {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0023383{col 26}{space 2} .0058024{col 37}{space 1}   -0.40{col 46}{space 3}0.687{col 54}{space 4}-.0137107{col 67}{space 3} .0090342
+{txt}{space 12} {c |}
+{space 7}_cons {c |}{col 14}{res}{space 2}-.0128693{col 26}{space 2} .0150277{col 37}{space 1}   -0.86{col 46}{space 3}0.392{col 54}{space 4} -.042323{col 67}{space 3} .0165843
+{txt}{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}D_gdp        {txt}{c |}
+{space 8}_ce1 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2}-.1396398{col 26}{space 2} .0789373{col 37}{space 1}   -1.77{col 46}{space 3}0.077{col 54}{space 4} -.294354{col 67}{space 3} .0150745
+{txt}{space 12} {c |}
+{space 8}_ce2 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2} .0398666{col 26}{space 2} .0248067{col 37}{space 1}    1.61{col 46}{space 3}0.108{col 54}{space 4}-.0087536{col 67}{space 3} .0884868
+{txt}{space 12} {c |}
+{space 8}_ce3 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2} .1648496{col 26}{space 2} .0594971{col 37}{space 1}    2.77{col 46}{space 3}0.006{col 54}{space 4} .0482373{col 67}{space 3} .2814618
+{txt}{space 12} {c |}
+{space 9}cdr {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .3187521{col 26}{space 2} .1239767{col 37}{space 1}    2.57{col 46}{space 3}0.010{col 54}{space 4} .0757622{col 67}{space 3} .5617421
+{txt}{space 12} {c |}
+{space 6}pripro {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .2112313{col 26}{space 2} .1215659{col 37}{space 1}    1.74{col 46}{space 3}0.082{col 54}{space 4}-.0270335{col 67}{space 3} .4494962
+{txt}{space 12} {c |}
+{space 9}gdp {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.4607292{col 26}{space 2} .2014544{col 37}{space 1}   -2.29{col 46}{space 3}0.022{col 54}{space 4}-.8555726{col 67}{space 3}-.0658858
+{txt}{space 12} {c |}
+{space 9}gex {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .0410725{col 26}{space 2} .0297416{col 37}{space 1}    1.38{col 46}{space 3}0.167{col 54}{space 4}-.0172201{col 67}{space 3}  .099365
+{txt}{space 12} {c |}
+{space 8}loan {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0144855{col 26}{space 2} .0139106{col 37}{space 1}   -1.04{col 46}{space 3}0.298{col 54}{space 4}-.0417498{col 67}{space 3} .0127788
+{txt}{space 12} {c |}
+{space 8}irbi {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .0104844{col 26}{space 2} .0043445{col 37}{space 1}    2.41{col 46}{space 3}0.016{col 54}{space 4} .0019694{col 67}{space 3} .0189994
+{txt}{space 12} {c |}
+{space 9}cpi {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0022115{col 26}{space 2} .0022381{col 37}{space 1}   -0.99{col 46}{space 3}0.323{col 54}{space 4}-.0065981{col 67}{space 3} .0021751
+{txt}{space 12} {c |}
+{space 9}irl {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0074097{col 26}{space 2} .0057721{col 37}{space 1}   -1.28{col 46}{space 3}0.199{col 54}{space 4}-.0187228{col 67}{space 3} .0039034
+{txt}{space 12} {c |}
+{space 7}_cons {c |}{col 14}{res}{space 2}-.0012584{col 26}{space 2} .0149493{col 37}{space 1}   -0.08{col 46}{space 3}0.933{col 54}{space 4}-.0305585{col 67}{space 3} .0280417
+{txt}{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}D_gex        {txt}{c |}
+{space 8}_ce1 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2}-.2666997{col 26}{space 2} .4325971{col 37}{space 1}   -0.62{col 46}{space 3}0.538{col 54}{space 4}-1.114575{col 67}{space 3} .5811751
+{txt}{space 12} {c |}
+{space 8}_ce2 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2}  -.03662{col 26}{space 2} .1359472{col 37}{space 1}   -0.27{col 46}{space 3}0.788{col 54}{space 4}-.3030717{col 67}{space 3} .2298317
+{txt}{space 12} {c |}
+{space 8}_ce3 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2}  1.74295{col 26}{space 2}   .32606{col 37}{space 1}    5.35{col 46}{space 3}0.000{col 54}{space 4} 1.103885{col 67}{space 3} 2.382016
+{txt}{space 12} {c |}
+{space 9}cdr {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.8130075{col 26}{space 2}  .679425{col 37}{space 1}   -1.20{col 46}{space 3}0.231{col 54}{space 4}-2.144656{col 67}{space 3}  .518641
+{txt}{space 12} {c |}
+{space 6}pripro {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0189884{col 26}{space 2} .6662131{col 37}{space 1}   -0.03{col 46}{space 3}0.977{col 54}{space 4}-1.324742{col 67}{space 3} 1.286765
+{txt}{space 12} {c |}
+{space 9}gdp {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} 1.443226{col 26}{space 2} 1.104023{col 37}{space 1}    1.31{col 46}{space 3}0.191{col 54}{space 4}-.7206196{col 67}{space 3} 3.607071
+{txt}{space 12} {c |}
+{space 9}gex {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .2314989{col 26}{space 2}  .162992{col 37}{space 1}    1.42{col 46}{space 3}0.156{col 54}{space 4}-.0879595{col 67}{space 3} .5509573
+{txt}{space 12} {c |}
+{space 8}loan {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .0730981{col 26}{space 2} .0762338{col 37}{space 1}    0.96{col 46}{space 3}0.338{col 54}{space 4}-.0763173{col 67}{space 3} .2225136
+{txt}{space 12} {c |}
+{space 8}irbi {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0301903{col 26}{space 2} .0238088{col 37}{space 1}   -1.27{col 46}{space 3}0.205{col 54}{space 4}-.0768547{col 67}{space 3} .0164741
+{txt}{space 12} {c |}
+{space 9}cpi {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}  .019962{col 26}{space 2} .0122655{col 37}{space 1}    1.63{col 46}{space 3}0.104{col 54}{space 4}-.0040779{col 67}{space 3} .0440019
+{txt}{space 12} {c |}
+{space 9}irl {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0096149{col 26}{space 2} .0316327{col 37}{space 1}   -0.30{col 46}{space 3}0.761{col 54}{space 4}-.0716138{col 67}{space 3}  .052384
+{txt}{space 12} {c |}
+{space 7}_cons {c |}{col 14}{res}{space 2} -.478739{col 26}{space 2} .0819261{col 37}{space 1}   -5.84{col 46}{space 3}0.000{col 54}{space 4}-.6393111{col 67}{space 3}-.3181669
+{txt}{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}D_loan       {txt}{c |}
+{space 8}_ce1 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2} .6010563{col 26}{space 2} .6736949{col 37}{space 1}    0.89{col 46}{space 3}0.372{col 54}{space 4}-.7193614{col 67}{space 3} 1.921474
+{txt}{space 12} {c |}
+{space 8}_ce2 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2}-.1275656{col 26}{space 2} .2117142{col 37}{space 1}   -0.60{col 46}{space 3}0.547{col 54}{space 4}-.5425177{col 67}{space 3} .2873866
+{txt}{space 12} {c |}
+{space 8}_ce3 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2}  1.12692{col 26}{space 2} .5077817{col 37}{space 1}    2.22{col 46}{space 3}0.026{col 54}{space 4} .1316865{col 67}{space 3} 2.122154
+{txt}{space 12} {c |}
+{space 9}cdr {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .9013761{col 26}{space 2} 1.058086{col 37}{space 1}    0.85{col 46}{space 3}0.394{col 54}{space 4}-1.172435{col 67}{space 3} 2.975187
+{txt}{space 12} {c |}
+{space 6}pripro {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}  1.74632{col 26}{space 2} 1.037511{col 37}{space 1}    1.68{col 46}{space 3}0.092{col 54}{space 4}-.2871645{col 67}{space 3} 3.779804
+{txt}{space 12} {c |}
+{space 9}gdp {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-2.220521{col 26}{space 2} 1.719324{col 37}{space 1}   -1.29{col 46}{space 3}0.197{col 54}{space 4}-5.590334{col 67}{space 3} 1.149291
+{txt}{space 12} {c |}
+{space 9}gex {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .0494558{col 26}{space 2} .2538317{col 37}{space 1}    0.19{col 46}{space 3}0.846{col 54}{space 4}-.4480452{col 67}{space 3} .5469568
+{txt}{space 12} {c |}
+{space 8}loan {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.1551115{col 26}{space 2} .1187209{col 37}{space 1}   -1.31{col 46}{space 3}0.191{col 54}{space 4}-.3878001{col 67}{space 3} .0775772
+{txt}{space 12} {c |}
+{space 8}irbi {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .1544027{col 26}{space 2} .0370781{col 37}{space 1}    4.16{col 46}{space 3}0.000{col 54}{space 4}  .081731{col 67}{space 3} .2270743
+{txt}{space 12} {c |}
+{space 9}cpi {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0352611{col 26}{space 2} .0191013{col 37}{space 1}   -1.85{col 46}{space 3}0.065{col 54}{space 4} -.072699{col 67}{space 3} .0021769
+{txt}{space 12} {c |}
+{space 9}irl {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.1349269{col 26}{space 2} .0492624{col 37}{space 1}   -2.74{col 46}{space 3}0.006{col 54}{space 4}-.2314794{col 67}{space 3}-.0383744
+{txt}{space 12} {c |}
+{space 7}_cons {c |}{col 14}{res}{space 2}-.0342086{col 26}{space 2} .1275856{col 37}{space 1}   -0.27{col 46}{space 3}0.789{col 54}{space 4}-.2842718{col 67}{space 3} .2158546
+{txt}{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}D_irbi       {txt}{c |}
+{space 8}_ce1 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2}-5.316235{col 26}{space 2} 3.632518{col 37}{space 1}   -1.46{col 46}{space 3}0.143{col 54}{space 4}-12.43584{col 67}{space 3} 1.803369
+{txt}{space 12} {c |}
+{space 8}_ce2 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2}  1.38507{col 26}{space 2} 1.141549{col 37}{space 1}    1.21{col 46}{space 3}0.225{col 54}{space 4}-.8523247{col 67}{space 3} 3.622464
+{txt}{space 12} {c |}
+{space 8}_ce3 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2} 1.391926{col 26}{space 2} 2.737925{col 37}{space 1}    0.51{col 46}{space 3}0.611{col 54}{space 4}-3.974308{col 67}{space 3} 6.758161
+{txt}{space 12} {c |}
+{space 9}cdr {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} 1.287769{col 26}{space 2} 5.705131{col 37}{space 1}    0.23{col 46}{space 3}0.821{col 54}{space 4}-9.894083{col 67}{space 3} 12.46962
+{txt}{space 12} {c |}
+{space 6}pripro {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .8574068{col 26}{space 2} 5.594191{col 37}{space 1}    0.15{col 46}{space 3}0.878{col 54}{space 4}-10.10701{col 67}{space 3} 11.82182
+{txt}{space 12} {c |}
+{space 9}gdp {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} 2.300372{col 26}{space 2}  9.27048{col 37}{space 1}    0.25{col 46}{space 3}0.804{col 54}{space 4}-15.86943{col 67}{space 3} 20.47018
+{txt}{space 12} {c |}
+{space 9}gex {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}  .842743{col 26}{space 2} 1.368644{col 37}{space 1}    0.62{col 46}{space 3}0.538{col 54}{space 4}-1.839749{col 67}{space 3} 3.525235
+{txt}{space 12} {c |}
+{space 8}loan {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-1.582868{col 26}{space 2}  .640135{col 37}{space 1}   -2.47{col 46}{space 3}0.013{col 54}{space 4} -2.83751{col 67}{space 3}-.3282267
+{txt}{space 12} {c |}
+{space 8}irbi {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .4984779{col 26}{space 2} .1999224{col 37}{space 1}    2.49{col 46}{space 3}0.013{col 54}{space 4} .1066371{col 67}{space 3} .8903187
+{txt}{space 12} {c |}
+{space 9}cpi {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0558088{col 26}{space 2} .1029931{col 37}{space 1}   -0.54{col 46}{space 3}0.588{col 54}{space 4}-.2576717{col 67}{space 3}  .146054
+{txt}{space 12} {c |}
+{space 9}irl {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0673499{col 26}{space 2} .2656195{col 37}{space 1}   -0.25{col 46}{space 3}0.800{col 54}{space 4}-.5879545{col 67}{space 3} .4532548
+{txt}{space 12} {c |}
+{space 7}_cons {c |}{col 14}{res}{space 2}-.3549657{col 26}{space 2} .6879331{col 37}{space 1}   -0.52{col 46}{space 3}0.606{col 54}{space 4} -1.70329{col 67}{space 3} .9933585
+{txt}{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}D_cpi        {txt}{c |}
+{space 8}_ce1 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2}-1.231517{col 26}{space 2} 6.272612{col 37}{space 1}   -0.20{col 46}{space 3}0.844{col 54}{space 4}-13.52561{col 67}{space 3} 11.06258
+{txt}{space 12} {c |}
+{space 8}_ce2 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2} .1519257{col 26}{space 2}  1.97122{col 37}{space 1}    0.08{col 46}{space 3}0.939{col 54}{space 4}-3.711595{col 67}{space 3} 4.015446
+{txt}{space 12} {c |}
+{space 8}_ce3 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2} 2.001143{col 26}{space 2} 4.727834{col 37}{space 1}    0.42{col 46}{space 3}0.672{col 54}{space 4}-7.265243{col 67}{space 3} 11.26753
+{txt}{space 12} {c |}
+{space 9}cdr {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} 7.626244{col 26}{space 2}  9.85159{col 37}{space 1}    0.77{col 46}{space 3}0.439{col 54}{space 4}-11.68252{col 67}{space 3}   26.935
+{txt}{space 12} {c |}
+{space 6}pripro {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}  3.32868{col 26}{space 2} 9.660018{col 37}{space 1}    0.34{col 46}{space 3}0.730{col 54}{space 4}-15.60461{col 67}{space 3} 22.26197
+{txt}{space 12} {c |}
+{space 9}gdp {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}  6.86023{col 26}{space 2} 16.00821{col 37}{space 1}    0.43{col 46}{space 3}0.668{col 54}{space 4}-24.51529{col 67}{space 3} 38.23575
+{txt}{space 12} {c |}
+{space 9}gex {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} 4.754268{col 26}{space 2} 2.363366{col 37}{space 1}    2.01{col 46}{space 3}0.044{col 54}{space 4} .1221553{col 67}{space 3} 9.386381
+{txt}{space 12} {c |}
+{space 8}loan {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-1.588068{col 26}{space 2} 1.105382{col 37}{space 1}   -1.44{col 46}{space 3}0.151{col 54}{space 4}-3.754576{col 67}{space 3} .5784407
+{txt}{space 12} {c |}
+{space 8}irbi {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .5265242{col 26}{space 2}  .345225{col 37}{space 1}    1.53{col 46}{space 3}0.127{col 54}{space 4}-.1501044{col 67}{space 3} 1.203153
+{txt}{space 12} {c |}
+{space 9}cpi {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.1631499{col 26}{space 2}  .177848{col 37}{space 1}   -0.92{col 46}{space 3}0.359{col 54}{space 4}-.5117255{col 67}{space 3} .1854258
+{txt}{space 12} {c |}
+{space 9}irl {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0336722{col 26}{space 2} .4586703{col 37}{space 1}   -0.07{col 46}{space 3}0.941{col 54}{space 4}-.9326495{col 67}{space 3} .8653051
+{txt}{space 12} {c |}
+{space 7}_cons {c |}{col 14}{res}{space 2} .9313749{col 26}{space 2} 1.187919{col 37}{space 1}    0.78{col 46}{space 3}0.433{col 54}{space 4}-1.396904{col 67}{space 3} 3.259654
+{txt}{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}D_irl        {txt}{c |}
+{space 8}_ce1 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2} 1.761678{col 26}{space 2} 2.027014{col 37}{space 1}    0.87{col 46}{space 3}0.385{col 54}{space 4}-2.211197{col 67}{space 3} 5.734552
+{txt}{space 12} {c |}
+{space 8}_ce2 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2}-.6827376{col 26}{space 2} .6370059{col 37}{space 1}   -1.07{col 46}{space 3}0.284{col 54}{space 4}-1.931246{col 67}{space 3} .5657711
+{txt}{space 12} {c |}
+{space 8}_ce3 {c |}
+{space 9}L1. {c |}{col 14}{res}{space 2} 1.037047{col 26}{space 2} 1.527814{col 37}{space 1}    0.68{col 46}{space 3}0.497{col 54}{space 4}-1.957414{col 67}{space 3} 4.031509
+{txt}{space 12} {c |}
+{space 9}cdr {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-1.298818{col 26}{space 2} 3.183572{col 37}{space 1}   -0.41{col 46}{space 3}0.683{col 54}{space 4}-7.538504{col 67}{space 3} 4.940867
+{txt}{space 12} {c |}
+{space 6}pripro {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .7518661{col 26}{space 2} 3.121665{col 37}{space 1}    0.24{col 46}{space 3}0.810{col 54}{space 4}-5.366484{col 67}{space 3} 6.870217
+{txt}{space 12} {c |}
+{space 9}gdp {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} 3.012243{col 26}{space 2} 5.173104{col 37}{space 1}    0.58{col 46}{space 3}0.560{col 54}{space 4}-7.126855{col 67}{space 3} 13.15134
+{txt}{space 12} {c |}
+{space 9}gex {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .5689715{col 26}{space 2} .7637291{col 37}{space 1}    0.74{col 46}{space 3}0.456{col 54}{space 4}-.9279101{col 67}{space 3} 2.065853
+{txt}{space 12} {c |}
+{space 8}loan {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0014311{col 26}{space 2} .3572075{col 37}{space 1}   -0.00{col 46}{space 3}0.997{col 54}{space 4}-.7015449{col 67}{space 3} .6986828
+{txt}{space 12} {c |}
+{space 8}irbi {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .3427321{col 26}{space 2} .1115605{col 37}{space 1}    3.07{col 46}{space 3}0.002{col 54}{space 4} .1240775{col 67}{space 3} .5613867
+{txt}{space 12} {c |}
+{space 9}cpi {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2}-.0611412{col 26}{space 2} .0574721{col 37}{space 1}   -1.06{col 46}{space 3}0.287{col 54}{space 4}-.1737845{col 67}{space 3} .0515021
+{txt}{space 12} {c |}
+{space 9}irl {c |}
+{space 9}LD. {c |}{col 14}{res}{space 2} .3198453{col 26}{space 2} .1482207{col 37}{space 1}    2.16{col 46}{space 3}0.031{col 54}{space 4}  .029338{col 67}{space 3} .6103526
+{txt}{space 12} {c |}
+{space 7}_cons {c |}{col 14}{res}{space 2}-.4733308{col 26}{space 2} .3838798{col 37}{space 1}   -1.23{col 46}{space 3}0.218{col 54}{space 4}-1.225721{col 67}{space 3} .2790597
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+Cointegrating equations
+
+{col 1}{text}Equation        {col 18}  Parms{col 26}   chi2   {col 37} P>chi2
+{col 1}{text}{hline 17}{hline 8}{hline 11}{hline 7}
+{col 1}{text}_ce1            {col 18}{result}     5{col 26} 172.9425{col 37} 0.0000
+{col 1}{text}_ce2            {col 18}{result}     5{col 26} 82.42712{col 37} 0.0000
+{col 1}{text}_ce3            {col 18}{result}     5{col 26} 4669.924{col 37} 0.0000
+{col 1}{text}{hline 17}{hline 8}{hline 11}{hline 7}
+
+Identification:  beta is exactly identified
+
+{col 18}Johansen normalization restrictions imposed
+{res}{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}        beta{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      z{col 46}   P>|z|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}_ce1         {txt}{c |}
+{space 9}cdr {c |}{col 14}{res}{space 2}        1{col 26}{space 2}        .{col 37}{space 1}       .{col 46}{space 3}    .{col 54}{space 4}        .{col 67}{space 3}        .
+{txt}{space 6}pripro {c |}{col 14}{res}{space 2}-2.78e-17{col 26}{space 2}        .{col 37}{space 1}       .{col 46}{space 3}    .{col 54}{space 4}        .{col 67}{space 3}        .
+{txt}{space 9}gdp {c |}{col 14}{res}{space 2} 4.86e-17{col 26}{space 2}        .{col 37}{space 1}       .{col 46}{space 3}    .{col 54}{space 4}        .{col 67}{space 3}        .
+{txt}{space 9}gex {c |}{col 14}{res}{space 2}  1.55064{col 26}{space 2} .4597734{col 37}{space 1}    3.37{col 46}{space 3}0.001{col 54}{space 4} .6495005{col 67}{space 3} 2.451779
+{txt}{space 8}loan {c |}{col 14}{res}{space 2}-1.118927{col 26}{space 2} .1466602{col 37}{space 1}   -7.63{col 46}{space 3}0.000{col 54}{space 4}-1.406376{col 67}{space 3}-.8314784
+{txt}{space 8}irbi {c |}{col 14}{res}{space 2}-.0698264{col 26}{space 2}  .025693{col 37}{space 1}   -2.72{col 46}{space 3}0.007{col 54}{space 4}-.1201838{col 67}{space 3}-.0194689
+{txt}{space 9}cpi {c |}{col 14}{res}{space 2}-.0059705{col 26}{space 2} .0046745{col 37}{space 1}   -1.28{col 46}{space 3}0.202{col 54}{space 4}-.0151324{col 67}{space 3} .0031915
+{txt}{space 9}irl {c |}{col 14}{res}{space 2} .2988418{col 26}{space 2} .0425667{col 37}{space 1}    7.02{col 46}{space 3}0.000{col 54}{space 4} .2154127{col 67}{space 3}  .382271
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}-10.87597{col 26}{space 2}        .{col 37}{space 1}       .{col 46}{space 3}    .{col 54}{space 4}        .{col 67}{space 3}        .
+{txt}{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}_ce2         {txt}{c |}
+{space 9}cdr {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (omitted)
+{space 6}pripro {c |}{col 14}{res}{space 2}        1{col 26}{space 2}        .{col 37}{space 1}       .{col 46}{space 3}    .{col 54}{space 4}        .{col 67}{space 3}        .
+{txt}{space 9}gdp {c |}{col 14}{res}{space 2} 6.66e-16{col 26}{space 2}        .{col 37}{space 1}       .{col 46}{space 3}    .{col 54}{space 4}        .{col 67}{space 3}        .
+{txt}{space 9}gex {c |}{col 14}{res}{space 2} 4.660431{col 26}{space 2} 1.447266{col 37}{space 1}    3.22{col 46}{space 3}0.001{col 54}{space 4} 1.823841{col 67}{space 3} 7.497021
+{txt}{space 8}loan {c |}{col 14}{res}{space 2}-2.886809{col 26}{space 2} .4616544{col 37}{space 1}   -6.25{col 46}{space 3}0.000{col 54}{space 4}-3.791635{col 67}{space 3}-1.981983
+{txt}{space 8}irbi {c |}{col 14}{res}{space 2}-.2527443{col 26}{space 2} .0808761{col 37}{space 1}   -3.13{col 46}{space 3}0.002{col 54}{space 4}-.4112585{col 67}{space 3}-.0942301
+{txt}{space 9}cpi {c |}{col 14}{res}{space 2}-.0105969{col 26}{space 2} .0147144{col 37}{space 1}   -0.72{col 46}{space 3}0.471{col 54}{space 4}-.0394367{col 67}{space 3} .0182429
+{txt}{space 9}irl {c |}{col 14}{res}{space 2} .8997413{col 26}{space 2} .1339905{col 37}{space 1}    6.71{col 46}{space 3}0.000{col 54}{space 4} .6371246{col 67}{space 3} 1.162358
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} -36.2558{col 26}{space 2}        .{col 37}{space 1}       .{col 46}{space 3}    .{col 54}{space 4}        .{col 67}{space 3}        .
+{txt}{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}_ce3         {txt}{c |}
+{space 9}cdr {c |}{col 14}{res}{space 2}-1.73e-18{col 26}{space 2}        .{col 37}{space 1}       .{col 46}{space 3}    .{col 54}{space 4}        .{col 67}{space 3}        .
+{txt}{space 6}pripro {c |}{col 14}{res}{space 2}-4.34e-19{col 26}{space 2}        .{col 37}{space 1}       .{col 46}{space 3}    .{col 54}{space 4}        .{col 67}{space 3}        .
+{txt}{space 9}gdp {c |}{col 14}{res}{space 2}        1{col 26}{space 2}        .{col 37}{space 1}       .{col 46}{space 3}    .{col 54}{space 4}        .{col 67}{space 3}        .
+{txt}{space 9}gex {c |}{col 14}{res}{space 2}-.5706479{col 26}{space 2} .0903605{col 37}{space 1}   -6.32{col 46}{space 3}0.000{col 54}{space 4}-.7477511{col 67}{space 3}-.3935446
+{txt}{space 8}loan {c |}{col 14}{res}{space 2}-.2387995{col 26}{space 2} .0288235{col 37}{space 1}   -8.28{col 46}{space 3}0.000{col 54}{space 4}-.2952926{col 67}{space 3}-.1823065
+{txt}{space 8}irbi {c |}{col 14}{res}{space 2}-.0166035{col 26}{space 2} .0050495{col 37}{space 1}   -3.29{col 46}{space 3}0.001{col 54}{space 4}-.0265004{col 67}{space 3}-.0067066
+{txt}{space 9}cpi {c |}{col 14}{res}{space 2}-.0006525{col 26}{space 2} .0009187{col 37}{space 1}   -0.71{col 46}{space 3}0.478{col 54}{space 4}-.0024531{col 67}{space 3} .0011481
+{txt}{space 9}irl {c |}{col 14}{res}{space 2}  .057875{col 26}{space 2} .0083657{col 37}{space 1}    6.92{col 46}{space 3}0.000{col 54}{space 4} .0414784{col 67}{space 3} .0742715
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}-.3598481{col 26}{space 2}        .{col 37}{space 1}       .{col 46}{space 3}    .{col 54}{space 4}        .{col 67}{space 3}        .
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. fcast compute m1_, step(15)
+
+. format %tqCCYY-!Qq date
+
+. tsfilter cf gdp_cf=gdp
+{res}
+{com}. ts line gdp
+{err}command {bf}ts{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. tsline gdp
+{res}
+{com}. tsline gdp_cf
+{res}
+{com}. tsfiler cf cdr_cf=cdr
+{err}command {bf}tsfiler{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. tsfilter cf cdr_cf=cdr
+{res}
+{com}. twoway (tsline gdp_cf) (tsline cdr_cf, yaxis(2))
+{res}
+{com}. twoway (tsline gdp_cf in 1/61) (tsline cdr_cf, yaxis(2) in 1/61)
+{err}option {bf:in} not allowed
+{txt}{search r(198), local:r(198);}
+
+{com}. twoway (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61
+{res}
+{com}. {res}{com}tsfilter cf m1_cdr_cf=m1_cdr
+{res}
+{com}. tsline m1_cdr_cf in 62/76
+{res}
+{com}. tsfilter cf m1_cdp_cf=m1_gdp
+{res}
+{com}. tsline m1_gdp_cf
+{err}variable {bf}m1_gdp_cf{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. tsfilter cf m1_gdp_cf=m1_gdp
+{res}
+{com}. tsline m1_gdp_cf
+{res}
+{com}. tsline m1_gdp_cf in 62/76
+{res}
+{com}. twoway (tsline m1_gdp_cf) (tsline m1_cdr_cf, yaxis(2)) legend(, col(1)) in 62/76
+{err}) required
+{txt}{search r(100), local:r(100);}
+
+{com}. twoway (tsline m1_gdp_cf) (tsline m1_cdr_cf, yaxis(2)), legend(, col(1)) in 62/76
+{err}invalid 'col' 
+{txt}{search r(198), local:r(198);}
+
+{com}. twoway (tsline m1_gdp_cf) (tsline m1_cdr_cf, yaxis(2)), legend(, cols(1)) in 62/76
+{err}invalid 'cols' 
+{txt}{search r(198), local:r(198);}
+
+{com}. twoway (tsline m1_gdp_cf) (tsline m1_cdr_cf, yaxis(2)), in 62/76
+{err}option {bf:in} not allowed
+{txt}{search r(198), local:r(198);}
+
+{com}. twoway (tsline m1_gdp_cf) (tsline m1_cdr_cf, yaxis(2)) in 62/76
+{res}
+{com}. tsfilter cf m1_loan_cf=m1_loan
+{res}
+{com}. tsline loan
+{res}
+{com}. tsline m1_loan_cf in 62/76
+{res}
+{com}. twoway (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61, legend(col(1))
+{res}
+{com}. tsfileter cf pripro_cf=pripro
+{err}command {bf}tsfileter{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. tsfilter cf pripro_cf=pripro
+{res}
+{com}. tsfilter cf gex_cf=gex
+{res}
+{com}. tsfilter cf loan_cf=loan
+{res}
+{com}. tsfilter cf irbi_cf=irbi
+{res}
+{com}. tsfilter cf cpi_cf=cpi
+{res}
+{com}. tsfilter cf irl_cf=irl
+{res}
+{com}. label variable cdr_cf "Credis cyclical component from cf filter"
+
+. label variable gdp_cf "GDP cyclical component from cf filter"
+
+. label variable pripro_cf "Property Price cyclical component from cf filter"
+
+. label variable gex_cf "Goverment Expenditure cyclical component from cf filter"
+
+. label variable loan_cf "Loan cyclical component from cf filter"
+
+. label variable cpi_cf "BI Rate cyclical component from cf filter"
+
+. label variable irl_cf "Real Interests cyclical component from cf filter"
+
+. twoway (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61, legend(col(1)) xlab(, grid)
+{res}
+{com}. label variable cdr_cf "Credits cyclical component from cf filter"
+
+. twoway (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61, legend(col(1)) xlab(, grid)
+{res}
+{com}. {res}{com}twoway (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61, legend(col(1)) xlab(, grid) ytick(-50(25)50, grid)
+{res}
+{com}. twoway (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61, legend(col(1)) xlab(, grid) scheme(economist)
+{res}
+{com}. twoway (lpolyci gdp_cf date) (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61, legend(col(1)) xlab(, grid) scheme(economist)
+{res}
+{com}. twoway (lpolyci gdp_cf date) (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61, legend(col(1)) xlab(, grid)
+{res}
+{com}. twoway (lpolyci gdp_cf date) (lpolyci cdr_cf date) (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61, legend(col(1)) xlab(, grid)
+{res}
+{com}. twoway (lpoly gdp_cf date) (lpoly cdr_cf date) (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61, legend(col(1)) xlab(, grid)
+{res}
+{com}. twoway (lpoly gdp_cf date) (lpoly cdr_cf date) (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid style(none))
+{res}{p 0 4 2}
+{txt}(note:  named style
+none not found in class
+ticksetstyle,  default attributes used)
+{p_end}
+{res}
+{com}. twoway (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10)
+{res}
+{com}. twoway (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. twoway (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#40, grid tstyle(none))
+{res}
+{com}. twoway (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#50, grid tstyle(none))
+{res}
+{com}. twoway (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#60, grid tstyle(none))
+{res}
+{com}. twoway (tsline gdp_cf) (tsline cdr_cf, yaxis(2)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. twoway (tsline gdp_cf) (tsline cdr_cf, yaxis(2) color(red)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. graph save Graph "E:\My Files\Research\BI Working Paper\credit.gph"
+{res}{txt}(file E:\My Files\Research\BI Working Paper\credit.gph saved)
+
+{com}. twoway (tsline gdp_cf) (tsline pripro_cf, yaxis(2) color(red)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. twoway (tsline gdp_cf, color(blue)) (tsline pripro_cf, yaxis(2) color(red)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. graph save Graph "E:\My Files\Research\BI Working Paper\property.gph"
+{res}{txt}(file E:\My Files\Research\BI Working Paper\property.gph saved)
+
+{com}. twoway (tsline gdp_cf, color(blue)) (tsline gex_cf, yaxis(2) color(red)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. graph save Graph "E:\My Files\Research\BI Working Paper\gex.gph"
+{res}{txt}(file E:\My Files\Research\BI Working Paper\gex.gph saved)
+
+{com}. twoway (tsline gdp_cf, color(blue)) (tsline loan_cf, yaxis(2) color(red)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. graph save Graph "E:\My Files\Research\BI Working Paper\loan.gph"
+{res}{txt}(file E:\My Files\Research\BI Working Paper\loan.gph saved)
+
+{com}. twoway (tsline gdp_cf, color(blue)) (tsline irbi_cf, yaxis(2) color(red)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. label variable irbi_cf "BI Rates cyclical component from cf filter"
+
+. twoway (tsline gdp_cf, color(blue)) (tsline irbi_cf, yaxis(2) color(red)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. graph save Graph "E:\My Files\Research\BI Working Paper\bi rate.gph"
+{res}{txt}(file E:\My Files\Research\BI Working Paper\bi rate.gph saved)
+
+{com}. twoway (tsline gdp_cf, color(blue)) (tsline cpi_cf, yaxis(2) color(red)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. graph save Graph "E:\My Files\Research\BI Working Paper\cpi.gph"
+{res}{txt}(file E:\My Files\Research\BI Working Paper\cpi.gph saved)
+
+{com}. twoway (tsline gdp_cf, color(blue)) (tsline irl_cf, yaxis(2) color(red)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. graph save Graph "E:\My Files\Research\BI Working Paper\rir.gph"
+{res}{txt}(file E:\My Files\Research\BI Working Paper\rir.gph saved)
+
+{com}. tsfilter cf m1_gdp_cf= m1_gdp in 62/76
+{err}variable {bf}m1_gdp_cf{sf} already defined
+{txt}{search r(110), local:r(110);}
+
+{com}. tsfilter cf m1_gdp_cf1= m1_gdp in 62/76
+{res}
+{com}. tsfilter cf m1_cdr_cf1=m1_cdr in 62/76
+{res}
+{com}. tsfilter cf m1_gex_cf=m1_gex in/62/76
+{err}{p 0 4 2}{bf:m1_gex in/62/76} contains an invalid varlist{p_end}
+{txt}{search r(198), local:r(198);}
+
+{com}. tsfilter cf m1_gex_cf=m1_gex in 62/76
+{res}
+{com}. tsfilter cf m1_loan_cf=m1_loan 62/76
+{err}{p 0 4 2}{bf:m1_loan 62/76} is an invalid varlist{p_end}
+{txt}{search r(198), local:r(198);}
+
+{com}. tsfilter cf m1_loan_cf=m1_loan in 62/76
+{err}variable {bf}m1_loan_cf{sf} already defined
+{txt}{search r(110), local:r(110);}
+
+{com}. tsfilter cf m1_loan_cf1=m1_loan in 62/76
+{res}
+{com}. tsfilter cf m1_irbi_cf=m1_irbi in 62/76
+{res}
+{com}. tsfilter cf m1_cpi_cf=m1_cpi in 62/76
+{res}
+{com}. tsfilter cf m1_irl_cf=m1_irl in 62/76
+{res}
+{com}. label variable m1_gdp_cf1 "Forcast for GDP cyclical component from cf filter"
+
+. label variable m1_cdr_cf1 "Forecast for Credits cyclical component from cf filter"
+
+. label variable m1_gex_cf "Forecast for Government Expenditure cyclical component from cf filter"
+
+. label variable m1_loan_cf1 "Forecast for Loan cyclical component from cf filter"
+
+. label variable m1_irbi_cf "Forecast for BI Rate cyclical component from cf filter"
+
+. label variable m1_cpi_cf "Forecast for CPIi cyclical component from cf filter"
+
+. label variable m1_irl_cf "Forecast for RIR cyclical component from cf filter"
+
+. twoway (tsline m1_gdp_cf1, color(blue)) (tsline m1_cdr_cf1, yaxis(2) color(red)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. twoway (tsline m1_gdp_cf1, color(blue)) (tsline m1_cdr_cf1, yaxis(2) color(red)) in 62/76, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. connect m1_gdp in 62/76
+{err}command {bf}connect{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. tsline m1_gdp in 62/76
+{res}
+{com}. tsline D.m1_gdp in 62/76
+{res}
+{com}. tsline D2.m1_gdp in 62/76
+{res}
+{com}. tsfilter cf dm1_gdp_cf=D.m1_gdp
+{res}
+{com}. tsline dm1_gdp_cf in 62/76
+{res}
+{com}. tsfilter cf dm1_cdr_cf=D.m1_cdr
+{res}
+{com}. twoway (tsline dm1_gdp_cf) (tsline dm1_cdr_cf, yaxis(2))
+{res}
+{com}. twoway (tsline dm1_gdp_cf) (tsline dm1_cdr_cf, yaxis(2)) in 62/76
+{res}
+{com}. dfuller D.m1_gdp
+
+{txt}Dickey-Fuller test for unit root                   Number of obs   = {res}       14
+
+{txt}{col 32}{hline 10} Interpolated Dickey-Fuller {hline 9}
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+{hline 78}
+ Z(t)         {res}    -5.087            -3.750            -3.000            -2.630
+{txt}{hline 78}
+MacKinnon approximate p-value for Z(t) = {res}0.0000
+
+{com}. dfuller D.m1_gdp in 62/76
+
+{txt}Dickey-Fuller test for unit root                   Number of obs   = {res}       14
+
+{txt}{col 32}{hline 10} Interpolated Dickey-Fuller {hline 9}
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+{hline 78}
+ Z(t)         {res}    -5.087            -3.750            -3.000            -2.630
+{txt}{hline 78}
+MacKinnon approximate p-value for Z(t) = {res}0.0000
+
+{com}. dfuller m1_gdp in 62/76
+
+{txt}Dickey-Fuller test for unit root                   Number of obs   = {res}       15
+
+{txt}{col 32}{hline 10} Interpolated Dickey-Fuller {hline 9}
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+{hline 78}
+ Z(t)         {res}    -1.580            -3.750            -3.000            -2.630
+{txt}{hline 78}
+MacKinnon approximate p-value for Z(t) = {res}0.4935
+
+{com}. dfuller D.gdp
+
+{txt}Dickey-Fuller test for unit root                   Number of obs   = {res}       59
+
+{txt}{col 32}{hline 10} Interpolated Dickey-Fuller {hline 9}
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+{hline 78}
+ Z(t)         {res}    -8.052            -3.567            -2.923            -2.596
+{txt}{hline 78}
+MacKinnon approximate p-value for Z(t) = {res}0.0000
+
+{com}. dfuller D.cdr
+
+{txt}Dickey-Fuller test for unit root                   Number of obs   = {res}       59
+
+{txt}{col 32}{hline 10} Interpolated Dickey-Fuller {hline 9}
+                  Test         1% Critical       5% Critical      10% Critical
+               Statistic           Value             Value             Value
+{hline 78}
+ Z(t)         {res}    -7.501            -3.567            -2.923            -2.596
+{txt}{hline 78}
+MacKinnon approximate p-value for Z(t) = {res}0.0000
+
+{com}. tsfilter cf cycle1 dm1_cdr_cf=D.m1_cdr
+{err}variable {bf}dm1_cdr_cf{sf} already defined
+{txt}{search r(110), local:r(110);}
+
+{com}. twoway (tsline m1_gdp_cf1, color(blue)) (tsline m1_cdr_cf1, yaxis(2) color(red)) in 62/76, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. graph save Graph "E:\My Files\Research\BI Working Paper\fcdr.gph"
+{res}{txt}(file E:\My Files\Research\BI Working Paper\fcdr.gph saved)
+
+{com}. twoway (tsline m1_gdp_cf1, color(blue)) (tsline m1_gex_cf, yaxis(2) color(red)) in 62/76, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. graph save Graph "E:\My Files\Research\BI Working Paper\fgex.gph"
+{res}{txt}(file E:\My Files\Research\BI Working Paper\fgex.gph saved)
+
+{com}. twoway (tsline m1_gdp_cf1, color(blue)) (tsline m1_loan_cf1, yaxis(2) color(red)) in 62/76, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. graph save Graph "E:\My Files\Research\BI Working Paper\floan.gph"
+{res}{txt}(file E:\My Files\Research\BI Working Paper\floan.gph saved)
+
+{com}. twoway (tsline m1_gdp_cf1, color(blue)) (tsline m1_irbi_cf1, yaxis(2) color(red)) in 62/76, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{err}variable {bf}m1_irbi_cf1{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. twoway (tsline m1_gdp_cf1, color(blue)) (tsline m1_irbi_cf, yaxis(2) color(red)) in 62/76, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. graph save Graph "E:\My Files\Research\BI Working Paper\fbirate.gph"
+{res}{txt}(file E:\My Files\Research\BI Working Paper\fbirate.gph saved)
+
+{com}. twoway (tsline m1_gdp_cf1, color(blue)) (tsline m1_cpi_cf, yaxis(2) color(red)) in 62/76, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. graph save Graph "E:\My Files\Research\BI Working Paper\fcpi.gph"
+{res}{txt}(file E:\My Files\Research\BI Working Paper\fcpi.gph saved)
+
+{com}. twoway (tsline m1_gdp_cf1, color(blue)) (tsline m1_irl_cf, yaxis(2) color(red)) in 62/76, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. graph save Graph "E:\My Files\Research\BI Working Paper\firl.gph"
+{res}{txt}(file E:\My Files\Research\BI Working Paper\firl.gph saved)
+
+{com}. tsline m1_gdp_UB
+{res}
+{com}. tsline m1_gdp_UB in 62/76
+{res}
+{com}. tsline m1_gdp_LB in 62/76
+{res}
+{com}. tsfilter cf m1_gdp_lcf=m1_gdp_LB
+{res}
+{com}. tsline m1_gdp_lcf
+{res}
+{com}. tsline m1_gdp_lcf in 61/76
+{res}
+{com}. tsfilter hp gdp_hp=gdp
+{res}
+{com}. tsline gdp_hp
+{res}
+{com}. tsline gdp_hp in 1/61
+{res}
+{com}. twoway (tsline gdp_hp) (gdp_cf, yaxis(2)) in 1/61
+{err}gdp_cf is not a twoway plot type
+{txt}{search r(198), local:r(198);}
+
+{com}. twoway (tsline gdp_hp) (gdp_cf1, yaxis(2)) in 1/61
+{err}gdp_cf1 is not a twoway plot type
+{txt}{search r(198), local:r(198);}
+
+{com}. twoway (tsline gdp_hp) (tsline gdp_cf, yaxis(2)) in 1/61
+{res}
+{com}. twoway (tsline gdp_hp) (tsline gdp_cf, yaxis(2)) in 1/61, lengen(col(1))
+{err}option {bf:lengen()} not allowed
+{txt}{search r(198), local:r(198);}
+
+{com}. twoway (tsline gdp_hp) (tsline gdp_cf, yaxis(2)) in 1/61, lengend(col(1))
+{err}option {bf:lengend()} not allowed
+{txt}{search r(198), local:r(198);}
+
+{com}. twoway (tsline gdp_hp) (tsline gdp_cf, yaxis(2)) in 1/61
+{res}
+{com}. twoway (tsline gdp_hp) (tsline gdp_cf, yaxis(2) color(red)) in 1/61
+{res}
+{com}. lpolyci gdp_hp date
+{err}command {bf}lpolyci{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. graph lpolyci gdp_hp date
+{err}{p 0 4 2}
+lpolycigraph_g.new  gdp_hp date: class member function not found
+{p_end}
+{txt}{search r(4023), local:r(4023);}
+
+{com}. twoway lpolyci gdp_hp date
+{res}
+{com}. twoway lpolyci gdp_hp date in 1/61
+{res}
+{com}. twoway (tsline m1_gdp_cf1, recast(area) color(blue)) (tsline m1_cdr_cf1, yaxis(2) color(red)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. twoway (tsline gdp_cf, recast(area) color(blue)) (tsline pripro_cf, yaxis(2) color(red)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. {res}{com}twoway (tsline gdp_cf, recast(area) color(blue)) (tsline cdr_cf, yaxis(2) color(red)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{res}
+{com}. twoway (tsline gdp_cf, recast(area) color(light blue)) (tsline cdr_cf, yaxis(2) color(red)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{p 0 4 2}
+{txt}(note:  named style
+light not found in class
+color,  default attributes used)
+{p_end}
+{p 0 4 2}
+{txt}(note:  named style
+light not found in class
+color,  default attributes used)
+{p_end}
+{p 0 4 2}
+{txt}(note:  named style
+light not found in class
+color,  default attributes used)
+{p_end}
+{p 0 4 2}
+{txt}(note:  named style
+light not found in class
+color,  default attributes used)
+{p_end}
+{p 0 4 2}
+{txt}(note:  named style
+light not found in class
+color,  default attributes used)
+{p_end}
+{res}
+{com}. twoway (tsline gdp_cf, recast(area) color(Light blue)) (tsline cdr_cf, yaxis(2) color(red)) in 1/61, legend(col(1)) xlab(, grid) xmtick(#10, grid tstyle(none))
+{p 0 4 2}
+{txt}(note:  named style
+Light not found in class
+color,  default attributes used)
+{p_end}
+{p 0 4 2}
+{txt}(note:  named style
+Light not found in class
+color,  default attributes used)
+{p_end}
+{p 0 4 2}
+{txt}(note:  named style
+Light not found in class
+color,  default attributes used)
+{p_end}
+{p 0 4 2}
+{txt}(note:  named style
+Light not found in class
+color,  default attributes used)
+{p_end}
+{p 0 4 2}
+{txt}(note:  named style
+Light not found in class
+color,  default attributes used)
+{p_end}
+{res}
+{com}. drop date cdr pripro gdp gex loan irbi cpi irl m1_cdr m1_cdr_SE m1_cdr_LB m1_cdr_UB m1_pripro m1_pripro_SE m1_pripro_LB m1_pripro_UB m1_gdp m1_gdp_SE m1_gdp_LB m1_gdp_UB m1_gex m1_gex_SE m1_gex_LB m1_gex_UB m1_loan m1_loan_SE m1_loan_LB m1_loan_UB m1_irbi m1_irbi_SE m1_irbi_LB m1_irbi_UB m1_cpi m1_cpi_SE m1_cpi_LB m1_cpi_UB m1_irl m1_irl_SE m1_irl_LB m1_irl_UB gdp_cf cdr_cf m1_cdr_cf m1_cdp_cf m1_gdp_cf m1_loan_cf pripro_cf gex_cf loan_cf irbi_cf cpi_cf irl_cf m1_gdp_cf1 m1_cdr_cf1 m1_gex_cf m1_loan_cf1 m1_irbi_cf m1_cpi_cf m1_irl_cf dm1_gdp_cf dm1_cdr_cf m1_gdp_lcf gdp_hp
+
+. exit, clear
